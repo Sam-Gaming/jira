@@ -43,7 +43,7 @@ export const useGetTasks = ({
 				throw new Error("Failed to get tasks");
       }
       
-      //@ts-ignore
+      //@ts-expect-error cuseican
 			const { data } = await response.json();
 
 			return data;

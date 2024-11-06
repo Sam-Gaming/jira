@@ -54,9 +54,9 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        //@ts-ignore
-        IconLeft: ({ ...props }) => <ChevronLeft className="h-4 w-4" />,
-        IconRight: ({ ...props }) => <ChevronRight className="h-4 w-4" />,
+        //@ts-expect-error 1231313
+        IconLeft: ({ ...props }) => <ChevronLeft className="h-4 w-4" />,  // eslint-disable-line
+        IconRight: ({ ...props }) => <ChevronRight className="h-4 w-4" />,  // eslint-disable-line
       }}
       {...props}
     />

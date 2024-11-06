@@ -6,7 +6,6 @@ import { z } from "zod";
 import { getMember } from "../utils";
 import { DATABASE_ID, MEMBERS_ID } from "@/config";
 import { Query } from "node-appwrite";
-import { PopcornIcon } from "lucide-react";
 import { Member, MemberRole } from "../types";
 
 const app = new Hono()

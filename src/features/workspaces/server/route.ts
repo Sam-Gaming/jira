@@ -64,7 +64,7 @@ const app = new Hono()
     return c.json({ data: workspace });
   })
   .get("/:workspaceId/info", sessionMiddleware, async (c) => {
-    const user = c.get("user");
+    const user = c.get("user"); // eslint-disable-line
     const databases = c.get("databases");
 
     const { workspaceId } = c.req.param();
